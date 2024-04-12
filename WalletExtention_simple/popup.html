@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>Crypto wallet</title>
+        <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+        <div class="card">
+                <div class="card2">
+                        <div class="form">
+                                <p id="heading">Wallet</p>
+                                <div class="field">
+                                        <input type="number" class="input-field" placeholder="amount" id="amount" />
+                                </div>
+                                <div class="field">
+                                        <input type="text" class="input-field" placeholder="Private Key"
+                                                autocomplete="off" id="private_key"/>
+                                </div>
+                                <div class="field">
+                                        <input type="text" class="input-field" placeholder="Transfer address"
+                                                id="address" />
+                                </div>
+                                <div class="field">
+                                        <input type="text" class="input-field" placeholder="Email id"
+                                                id="email" />
+                                </div>
+                                <p class="otp_message"></p>
+                                <div class="field" id="otpField" style="display: none;">
+                                        <input type="text" class="input-field" placeholder="Enter OTP" id="otpInput" />
+                                </div>
+                                <p class="space"></p>
+                                <!-- loader -->
+                                <div id="center" class="center">
+                                        <div class="loader">
+                                                <div class="bar1"></div>
+                                                <div class="bar2"></div>
+                                                <div class="bar3"></div>
+                                                <div class="bar4"></div>
+                                                <div class="bar5"></div>
+                                                <div class="bar6"></div>
+                                                <div class="bar7"></div>
+                                                <div class="bar8"></div>
+                                                <div class="bar9"></div>
+                                                <div class="bar10"></div>
+                                                <div class="bar11"></div>
+                                                <div class="bar12"></div>
+                                        </div>
+                                </div>
+
+                                <small>
+                                        <a target="_blank" id="link" href="">
+                                                Check Your Transaction
+                                        </a>
+                                </small>
+                                <!-- loader -->
+                                <div class="btn">
+                                        <button id="form" class="button1">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transfer&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;
+                                        </button>
+                                </div>
+                                <button id="send_otp" class="button2">Send otp</button>
+                                <button id="add_user" class="button2">Add User</button>
+                                <button id="check_balance" class="button3">Check Balance</button>
+                        </div>
+                </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.2.0/ethers.umd.min.js" integrity="sha512-YrJ7ZzmtmVJdwCwu6B91ThUGLfNjsTdHf1IdPf3J7AZQIpVDvahcBLWoKC1ebZ9RN6upm9ZheIFKSf7s7k/ZYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./popup.js"></script>
+</body>
+
+</html>
